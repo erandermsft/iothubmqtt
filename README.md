@@ -19,7 +19,7 @@ Pre-requisites:
 1) Create a device identity with a SAS Token:
     `az iot hub generate-sas-token -d <deviceid> -n <hubname>` <br>
     The token is the entire returned value, i.e. <br>`SharedAccessSignature sig={signature-string}&se={expiry}&sr={URL-encoded-resourceURI}`
-2) Modify iothubsas.py by setting:
+2) Modify iothubsas.py by setting:<br>
     `device_id=<deviceid>` <br>
     `iot_hub_name=<hubname>` <br>
     `sas_token=<value of sas token generated in step 1>` <br> 
