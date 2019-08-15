@@ -1,10 +1,10 @@
 # iothubmqtt
 Shows two ways of connecting to IOT Hub directly over MQTT.
 
-Make sure to install IOT Extensions for Azure CLI first:
+Pre-requisites:
+1) Install Azure CLI https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+2) Install IOT Extensions for Azure CLI: `az extension add --name azure-cli-iot-ext`
 
-
-`az extension add --name azure-cli-iot-ext`
 ## X509 Cert
 
 1) Create a device identity with a self-signed cert that is valid for 10 days using <br>
