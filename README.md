@@ -16,7 +16,7 @@ Pre-requisites:
     `iot_hub_name=<hubname>` <br>
 3) Run iothubcert.py. It should connect and send one message to IOT Hub over MQTT.
 ## SAS
-1) Create a device identity with a SAS Token:
+1) Create a device identity with a SAS Token:<br>
     `az iot hub generate-sas-token -d <deviceid> -n <hubname>` <br>
     The token is the entire returned value, i.e. <br>`SharedAccessSignature sig={signature-string}&se={expiry}&sr={URL-encoded-resourceURI}`
 2) Modify iothubsas.py by setting:<br>
